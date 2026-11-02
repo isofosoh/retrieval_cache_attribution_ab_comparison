@@ -1,4 +1,4 @@
-# cache_controlled_comparison_0dd21769
+# retrieval_cache_attribution_ab_comparison
 
 （检索缓存的命中归因场景）当检索缓存的命中归因出现提示词变化时，结论还站得住吗？用缓存命中与复用界定可接受的偏差范围。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python cache_controlled_comparison_0dd21769.py --help
-python cache_controlled_comparison_0dd21769.py --input sample.txt
-python cache_controlled_comparison_0dd21769.py --input sample.txt --json
+python retrieval_cache_attribution_ab_comparison.py --help
+python retrieval_cache_attribution_ab_comparison.py --input sample.txt
+python retrieval_cache_attribution_ab_comparison.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「对照实验」使用分隔符 `（无）` 区分标签与载荷。
@@ -50,7 +50,7 @@ python cache_controlled_comparison_0dd21769.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python cache_controlled_comparison_0dd21769.py --input sample.txt --json`；
+2. 运行 `python retrieval_cache_attribution_ab_comparison.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
